@@ -27,7 +27,7 @@ function Detail() {
       ) : (
         <MovieDetail
           medium_cover_image={datas.medium_cover_image}
-          title={datas.title}
+          title_long={datas.title_long}
           year={datas.year}
           rating={datas.rating}
           runtime={datas.runtime}

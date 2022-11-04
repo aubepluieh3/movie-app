@@ -1,25 +1,36 @@
 import styles from "./MovieDetail.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 function MovieDetail({
   medium_cover_image,
-  title,
-  year,
+  title_long,
   rating,
   genres,
   description,
 }) {
   return (
     <div className={styles.movie}>
-      <img src={medium_cover_image} className={styles.movie__img} />
+      <div className={styles.img}>
+        <img src={medium_cover_image} className={styles.movie__img} />
+      </div>
       <div>
-        <h2 className={styles.movie__title}>{title}</h2>
-        <h3 className={styles.movie__year}>{year}</h3>
-        <h3 className={styles.movie__rating}>{rating}</h3>
-        <p>{description}</p>
         <ul className={styles.movie__genres}>
           {genres.map((g) => (
-            <li key={g}>{g}</li>
+            <div className={styles.movie_genre} key={g}>
+              {g}
+            </div>
           ))}
         </ul>
+        <h2 className={styles.movie__title}>{title_long}</h2>
+
+        <div className={styles.movie__rating}>
+          <i>
+            <FontAwesomeIcon icon={faStar} />
+          </i>
+          <span>{rating}</span>
+        </div>
+        <span>{description}</span>
       </div>
     </div>
   );
