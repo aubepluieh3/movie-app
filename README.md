@@ -8,7 +8,10 @@
 
 ## ScreenShot
 
+<img src="https://github.com/aubepluieh3/movie-app/blob/7dc6c52ab0a7c5e6d83f4684f73b45af84c1eb03/ScreenShot/Home.JPG" width="500px" height="300px">
+
+<img src="https://github.com/aubepluieh3/movie-app/blob/7dc6c52ab0a7c5e6d83f4684f73b45af84c1eb03/ScreenShot/Detail.JPG" width="500px" height="300px">
 
 ## Update
 
-Detail 추가! 
+Detail 추가! (22.11.04)
