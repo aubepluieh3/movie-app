@@ -30,7 +30,11 @@ function MovieDetail({
           </i>
           <span>{rating}</span>
         </div>
-        <span>{description}</span>
+        <span>
+          {description.length > 350
+            ? `${description.slice(0, 350)}...`
+            : description}
+        </span>
       </div>
     </div>
   );

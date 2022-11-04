@@ -54,7 +54,7 @@
 }
 
 .movie_genre {
-  margin-right: 5px;
+  margin: 0px 5px 5px 0px;
   background-color: #c7ccff;
   width: 100px;
   height: 25px;
